@@ -1,0 +1,105 @@
+@media (max-width: 760px) {
+  * {
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 20px;
+    margin: 0px auto;
+    display: grid;
+    grid-template-rows: 280px 266px 250px;
+    grid-template-columns: repeat(3, 350px);
+    grid-template-areas:
+      "daniel daniel jonathan"
+      "jeanette  patrick patrick"
+      "kira kira kira";
+    gap: 20px;
+    background-color: rgba(233, 240, 246, 1);
+  }
+
+  #aspas {
+    position: absolute;
+    left: 380px;
+    top: -70px;
+    max-width: 100%;
+    z-index: -1;
+  }
+}
+
+@media (max-width: 650px) {
+  * {
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 30px;
+    margin: 0px auto;
+    display: grid;
+    grid-template-rows: 280px 266px 250px 250px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "daniel daniel"
+      "jeanette jonathan"
+      "patrick patrick"
+      "kira kira ";
+    gap: 20px;
+    background-color: rgba(233, 240, 246, 1);
+  }
+}
+
+@media (max-width: 440px) {
+  * {
+    font-size: 14px;
+  }
+
+  .container {
+    width: 380px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 440px 235px 220px 380px 430px;
+    grid-template-columns: 323px;
+    grid-template-areas:
+      "daniel"
+      "jonathan"
+      "jeanette"
+      "patrick"
+      "kira";
+    gap: 20px;
+    background-color: rgba(233, 240, 246, 1);
+  }
+
+  #aspas {
+    position: absolute;
+    left: 180px;
+    top: -65px;
+    max-width: 100%;
+    z-index: -1;
+  }
+  /* GERAL */
+  .testemunhos {
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  /* DANIEL */
+  .daniel .depoimento {
+    letter-spacing: 0.3px;
+  }
+
+  /* JONATHAN */
+  .jonathan .titulo-depoimento p {
+    width: auto;
+  }
+
+  /* JEANETTE */
+  .jeanette .depoimento p {
+    width: auto;
+    line-height: 18px;
+  }
+
+  /* PATRICK */ /* KIRA */
+  .patrick .titulo-depoimento p,
+  .kira .titulo-depoimento p {
+    font-size: 20px;
+  }
+}

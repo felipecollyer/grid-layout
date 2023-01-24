@@ -1,0 +1,159 @@
+:root {
+  --violet: hsl(263, 55%, 52%);
+  --grayish-blue: hsl(217, 19%, 35%);
+  --dark-blackish-blue: hsl(219, 29%, 14%);
+  --write: #fff;
+}
+* {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 13px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+}
+
+body {
+  background-color: rgba(233, 240, 246, 1);
+}
+
+.container {
+  width: 1120px;
+  padding: 0 5px;
+  height: 575px;
+  margin: 100px auto;
+  display: grid;
+  grid-template-rows: 280px 266px;
+  grid-template-columns: repeat(2, 275px) 250px;
+  grid-template-areas:
+    "daniel daniel jonathan kira"
+    "jeanette patrick patrick kira";
+  gap: 20px;
+  background-color: rgba(233, 240, 246, 1);
+}
+
+/* GERAL */
+.testemunhos {
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.perfil {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  line-height: 15px;
+}
+
+.perfil .nome,
+.titulo-depoimento {
+  color: #fff;
+}
+
+.titulo-depoimento p {
+  font-size: 1.6em;
+  margin: 15px 0;
+}
+
+.perfil .verificado,
+.depoimento {
+  color: rgba(255, 255, 255, 0.589);
+}
+
+.foto {
+  width: 30px;
+  border-radius: 30px;
+}
+
+.foto img {
+  border-radius: 30px;
+}
+
+/* DANIEL */
+
+.daniel {
+  grid-area: daniel;
+  background-color: var(--violet);
+}
+
+#aspas {
+  position: absolute;
+  left: 335px;
+  top: -70px;
+  max-width: 100%;
+  z-index: -1;
+}
+
+.daniel .foto {
+  border: 2px solid hsl(263, 63%, 66%);
+}
+
+.daniel .depoimento {
+  letter-spacing: 0.4px;
+}
+
+.daniel .titulo-depoimento {
+  position: relative;
+  z-index: 1;
+}
+
+/* JONATHAN */
+
+.jonathan {
+  grid-area: jonathan;
+  background-color: var(--grayish-blue);
+}
+
+.jonathan .titulo-depoimento p {
+  width: 200px;
+}
+
+/* KIRA */
+/* JEANNETTE */
+
+.kira {
+  grid-area: kira;
+  background-color: #fff;
+}
+
+.kira .titulo-depoimento,
+.kira .nome,
+.jeanette .titulo-depoimento,
+.jeanette .nome {
+  color: rgba(20, 20, 20, 0.788);
+}
+
+.kira .depoimento p,
+.kira .verificado,
+.jeanette .depoimento p,
+.jeanette .verificado {
+  line-height: 17.5px;
+  color: rgba(0, 0, 0, 0.479);
+}
+
+.jeanette {
+  grid-area: jeanette;
+  background-color: #fff;
+}
+
+.jeanette .depoimento p {
+  width: 180px;
+  line-height: 22px;
+}
+
+
+/* PATRICK */
+
+.patrick {
+  grid-area: patrick;
+  background-color: rgba(24, 32, 45, 1);
+}
+
+.patrick .foto {
+  border: 2px solid hsl(263, 63%, 66%);
+}
